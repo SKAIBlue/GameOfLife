@@ -4,6 +4,15 @@
 셀룰러 오토마타를 이용해 만들어진 생명 게임입니다. </br>
 It is Game of life using by cellular automata.
 
+## Struct
+<pre>
+typedef struct WORLD
+{
+	char* world;        // Two-dimensional array for save cell satus. 
+	int width;          // world width
+	int height;         // world height
+}World;
+</pre>
 
 ## Functions
 <pre>
