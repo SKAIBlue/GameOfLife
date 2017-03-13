@@ -236,13 +236,12 @@ void PrintValue(int value)
 	}
 }
 
-int Run(void* p)
+int Run(World* p)
 {
-	World* world = (World*)p;
 	while (ch!='Y' && ch!= 'y' && ch !='E'&& ch != 'e')
 	{
-		NextState(world);
-		PrintWorld(world, PrintValue);
+		NextState(p);
+		PrintWorld(p, PrintValue);
 		Sleep(SLEEP_TIME);
 	}
 	isThreadWorking = FALSE;
